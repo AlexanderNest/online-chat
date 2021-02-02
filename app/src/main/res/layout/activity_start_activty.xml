@@ -23,11 +23,11 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="292dp"
+        android:layout_marginTop="158dp"
         android:background="@drawable/purple_button"
+        android:onClick="onStartSearchingButtonClicked"
         android:text="@string/text_on_start_button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="onStartSearchingButtonClicked"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

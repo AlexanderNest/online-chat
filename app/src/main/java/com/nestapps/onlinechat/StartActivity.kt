@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.nestapps.onlinechat.ChatActivity
 import com.nestapps.onlinechat.R
 
 class StartActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class StartActivity : AppCompatActivity() {
     }
 
     fun onStartSearchingButtonClicked(view: View){
-        val intent = Intent(this, SearchingActivity::class.java)
+        val intent = Intent(this, ChatActivity::class.java)
         startActivity(intent)
     }
 
