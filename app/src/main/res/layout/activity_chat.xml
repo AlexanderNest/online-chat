@@ -17,6 +17,7 @@
         >
 
         <EditText
+            android:id="@+id/message_textbox"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,12 +26,13 @@
             android:hint="@string/message_box_hint"/>
 
         <Button
-            android:layout_marginLeft="3dp"
             android:id="@+id/button3"
-            android:background="@drawable/purple_button"
-            android:layout_weight="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="3"
+            android:background="@drawable/purple_button"
+            android:onClick="onSendButtonClicked"
             android:text="Button" />
     </LinearLayout>
 
