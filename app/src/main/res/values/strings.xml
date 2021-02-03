@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Online chat</string>
+    <string name="app_name">Анонимный чат</string>
     <string name="title_activity_start_activity">start_activity</string>
     <!--
 
@@ -33,4 +33,23 @@
         приложение запущено недавно.
     </string>
     <string name="text_on_start_button">начать поиск</string>
+
+
+    <!--
+        Строки, которые есть в меню
+    -->
+
+    <string name="end_the_dialog">Завершить диалог</string>
+
+
+    <!--
+        Строки, которые есть в файле chat_activity
+    -->
+
+    <string name="message_box_hint">Введите сообщение</string>
+
+
+
+
+
 </resources>

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChatActivity">
+    tools:context=".ChatActivity"
+    android:padding="10dp">
+
 
     <LinearLayout
         android:id="@+id/editBox"
@@ -20,10 +22,12 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="@string/message_box_hint"/>
 
         <Button
+            android:layout_marginLeft="3dp"
             android:id="@+id/button3"
+            android:background="@drawable/purple_button"
             android:layout_weight="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,6 +41,7 @@
         app:layout_constraintBottom_toTopOf="@id/editBox">
 
         <LinearLayout
+            android:id="@+id/messages_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"/>
