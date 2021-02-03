@@ -50,7 +50,7 @@ class ChatActivity : AppCompatActivity() {
 
     fun onSendButtonClicked(v: View){
         if (message_textbox.text.isEmpty()) return
-        
+
         // создаю объект, который описывает отправляемое сообщение
         var textbox = LayoutInflater.from(this).inflate(R.layout.own_mesage_box,
             messages_layout, false) as ConstraintLayout
@@ -58,13 +58,19 @@ class ChatActivity : AppCompatActivity() {
         textbox.rotation = 180F // переворачиваю т.к. все повернуто
         val message = textbox.getViewById(R.id.message_textView) as TextView // получаю view сообщения
         message.text = message_textbox.text
-        message.background = getDrawable(R.drawable.own_message_background)
         message_textbox.text = null
         messages_layout.addView(textbox, 0)
     }
 
     private fun showOpponentMessage(message: String){
+        var textbox = LayoutInflater.from(this).inflate(R.layout.opponent_message_box,
+            messages_layout, false) as ConstraintLayout
 
+        textbox.rotation = 180F // переворачиваю т.к. все повернуто
+        val messageView = textbox.getViewById(R.id.message_textView) as TextView // получаю view сообщения
+        messageView.text = message
+        message_textbox.text = null
+        messages_layout.addView(textbox, 0)
     }
 
 }
